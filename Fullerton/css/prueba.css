@@ -1,0 +1,1436 @@
+*{ margin:0px; padding: 0px;} /*margenes de la pagina */
+html, body{
+    max-width: 100% !important;
+    overflow-x: hidden !important;
+}
+div#amarillo{ /*Llamar el div con la id="general" del archivo html (index.html)*/
+	position: fixed; /* Para que al scrollear por la pagina, esto no se mueva*/
+	width: 100%; /*el largo que se le asigna al div*/
+	height:34px; /*el ancho que se le asigna al div*/
+	background-color: #F9C32D; /*el color de fondo que se le asigna al div*/
+	z-index: 100;
+}
+div#despacho{
+	position: fixed;
+	left: 170px; /*poner cant de pixeles que se mueva de izq a derecha */
+	top: 10px; /*poner cant de pixeles que se mueva de arriba hacia abajo */
+	font-size: 12px; /*tamaño de la fuente */
+	font-family:sans-serif; /*tipo de fuente */
+}
+div#login{
+	position: fixed;
+	right:100px; /*poner cant de pixeles que se mueva hacia la izquierda */
+	top:10px;
+	font-size: 12px;
+	font-family:sans-serif;
+}
+div#menu{
+	position: fixed;
+	top:34px;
+	background-color: #ffffff;
+	width:100%;
+	height: 70px;
+	z-index: 100;/*para que resalte el div, para que no se tape con las demas cosas*/
+}
+div#imagen{
+	position:fixed;
+	left: 170px;
+	top: 40px;
+}
+div#mascotas{
+	position:fixed;
+	left:450px;
+    top: 60px;
+	font-size: 16px;
+	font-family:'Cooper Black';
+}
+div#nuestrasmarcas{
+	position:fixed;
+	left:540px;
+    top: 60px;
+	font-size: 16px;
+	font-family: 'Cooper Black';
+}
+div#cocinaypanaderia{
+	position:fixed;
+	left:690px;
+    top: 60px;
+	font-size: 16px;
+	font-family: 'Cooper Black';
+}
+div#promociones{
+	position:fixed;
+	left:870px;
+    top: 60px;
+	font-size: 16px;
+	font-family: 'Cooper Black';
+}
+div#tiendas{
+	position:fixed;
+	left:1000px;
+    top: 60px;
+	font-size: 16px;
+	font-family: 'Cooper Black';
+} 
+div#lupa{
+    position:fixed;
+    right:140px;
+    top:55px;
+}
+div#carro{
+    position:fixed;
+    right:90px;
+    top:55px;
+}
+div#cuerpo{
+    background-color: red;
+    position:relative;/*para que se quede en la seccion correspondiente mientras se scrollea*/
+    top:100px;
+    width: 100%;
+    height: 409;
+}
+div#destacados{
+	background-color: white;
+	width: 100%;
+    height: 1000px;
+}
+div#productosdestacados{
+	position:relative;
+	top:150px;
+    font-family: "Cooper Black";
+    color:#414141; /*color de la fuente */
+    font-size: 30px;
+}
+div#birbogato{
+	position: relative;
+    top:172px;
+    left:50px;
+}
+div#evoledog{
+	position: relative;
+    top:-60px;
+    left:365px;
+}
+div#birbocachorro{
+	position: relative;
+    top:-290px;
+    left:680px;
+}
+div#birboadulto{
+	position: relative;
+    top:-520px;
+    left:1000px;
+}
+div#dato1{
+    position: relative;
+    top:-500px;
+    left:35px;
+    font-size: 11px;
+    font-family: "Cooper Black";
+}
+div#datos1{
+    position: relative;
+    top:-500px;
+    left:130px;
+    font-size: 11px;
+    font-family: "Cooper Black";
+}
+div#dato2{
+    position: relative;
+    top:-552px;
+    left:374px;
+    font-size: 11px;
+    font-family: "Cooper Black";
+}
+div#datos2{
+    position: relative;
+    top:-552px;
+    left:388px;
+    font-size: 11px;
+    font-family: "Cooper Black";
+}
+div#dato3{
+    position: relative;
+    top:-603px;
+    left:670px;
+    font-size: 11px;
+    font-family: "Cooper Black";
+}
+
+div#datos3{
+    position: relative;
+    top:-603px;
+    left:778px;
+    font-size: 11px;
+    font-family: "Cooper Black";
+}
+div#dato4{
+    position: relative;
+    top:-653px;
+    left:980px;
+    font-size: 11px;
+    font-family: "Cooper Black";
+}
+div#datos4{
+    position: relative;
+    top:-652px;
+    left:1100px;
+    font-size: 11px;
+    font-family: "Cooper Black";
+}
+
+div#precio1{
+    position: relative;
+    top:-640px;
+    left: 135px;
+    font-size: 11px;
+    font-family:sans-serif;
+}
+div#precio2{
+    position: relative;
+    top:-670px;
+    left: 450px;
+    font-size: 11px;
+    font-family:sans-serif;
+}
+div#precio3{
+    position: relative;
+    top:-695px;
+    left: 755px;
+    font-size: 11px;
+    font-family:sans-serif;
+}
+div#precio4{
+    position: relative;
+    top:-720px;
+    left:1090px;
+    font-size: 11px;
+    font-family:sans-serif;
+}
+div#stock1{
+    position: relative;
+    top:-690px;
+    left:135px;
+    font-family:sans-serif;
+}
+div#stock2{
+    position: relative;
+    top:-710px;
+    left:450px;
+    font-family:sans-serif;
+}
+div#stock3{
+    position: relative;
+    top:-730px;
+    left:750px;
+    font-family:sans-serif;
+}
+div#stock4{
+    position: relative;
+    top:-745px;
+    left:1085px;
+    font-family:sans-serif;
+}
+.boton1{ /*crear la forma del boton*/
+    position: relative;
+    width:175px;
+    height: 36px;
+    top:-725px;
+    left:90px;
+    background-color: rgb(246, 183, 66); /*color normal del boton*/
+    border-radius: 60px; /*para que tenga bordes*/
+}
+.boton1:hover{ /*para cuando se pase el cursor por encima del boton*/
+    background-color: orange; /*color al que cambiara cuando se ponga el cursor encima*/
+    cursor: pointer; /*para que cuando se ponga el cursor encima se vea que se puede seleccionar*/
+    transition: background-color 0.5s; /*para que el cambio de color sea más lento*/
+}
+.boton1 a{
+    position: relative;
+    font-size: 15px;
+    color:#FFFFFF;
+    text-decoration: none; /*para quitar subrayado de enlace*/
+    font-family:"Cooper Black";
+    left:20px;
+    top:10px;
+}
+.boton2{
+    position: relative;
+    width:175px;
+    height: 36px;
+    top:-760px;
+    left:400px;
+    background-color: rgb(246, 183, 66);
+    border-radius: 60px;
+}
+.boton2:hover{
+    background-color: orange;
+    cursor: pointer;
+    transition: background-color 0.5s;
+}
+.boton2 a{
+    position: relative;
+    font-size: 15px;
+    color:#FFFFFF;
+    text-decoration: none;
+    font-family:"Cooper Black";
+    left:20px;
+    top:10px;
+}
+.boton3{
+    position: relative;
+    width:175px;
+    height: 36px;
+    top:-798px;
+    left:700px;
+    background-color: rgb(246, 183, 66);
+    border-radius: 60px;
+}
+.boton3:hover{
+    background-color: orange;
+    cursor: pointer;
+    transition: background-color 0.5s;
+}
+.boton3 a{
+    position: relative;
+    font-size: 15px;
+    color:#FFFFFF;
+    text-decoration: none;
+    font-family:"Cooper Black";
+    left:20px;
+    top:10px;
+}
+.boton4{
+    position: relative;
+    width:175px;
+    height: 36px;
+    top:-835px;
+    left:1035px;
+    background-color: rgb(246, 183, 66);
+    border-radius: 60px;
+}
+.boton4:hover{
+    background-color: orange;
+    cursor: pointer;
+    transition: background-color 0.5s;
+}
+.boton4 a{
+    position: relative;
+    font-size: 15px;
+    color:#FFFFFF;
+    text-decoration: none;
+    font-family:"Cooper Black";
+    left:20px;
+    top:10px;
+}
+.boton5{
+    position: relative;
+    width:130px;
+    height: 36px;
+    top:-730px;
+    left:575px;
+    background-color: #414141;
+    border-radius: 60px;
+}
+.boton5:hover{
+    background-color: #1F1F1F;
+    cursor: pointer;
+    transition: background-color 0.5s;
+}
+.boton5 a{
+    position: relative;
+    font-size: 20px;
+    color:#FFFFFF;
+    text-decoration: none;
+    font-family:"Cooper Black";
+    left:15px;
+    top:5px;
+}
+
+div#nuestrasmascotas{
+    position: relative;
+    width: 100%;
+    height: 500px;
+    background-color: #FFFFFF;
+}
+
+div#txtnuestrasmascotas{
+    position: relative;
+    font-size: 25px;
+    line-height: 44px;
+    top:-50px;
+    font-family: "Cooper Black";
+}
+
+div#encuentraproducto{
+    position: relative;
+    font-size: 15px;
+    top:10px;
+    font-family: sans-serif;
+}
+
+div#imgperro{
+    position: relative;
+    top:150px;
+    left:200px;
+}
+div#imggato{
+    position: relative;
+    top:-90px;
+    left:530px;
+}
+div#imgconejo{
+    position: relative;
+    top:-330px;
+    left:860px;
+}
+div#txtperro{
+    position: relative;
+    top: -250px;
+    left: 280px;
+    font-family:"Cooper Black";
+}
+div#txtgato{
+    position: relative;
+    top: -278px;
+    left: 610px;
+    font-family:"Cooper Black";
+}
+div#txtconejo{
+    position: relative;
+    top: -300px;
+    left: 890px;
+    font-family:"Cooper Black";
+}
+
+div#premium{
+    position:relative;
+    width: 100%;
+    height: 300px;
+    top:-130px;
+    background-color: red;
+}
+div#grainfree{
+    position: relative;
+    width:25%;
+    height: 300px;
+    background-color: #F9C32D;
+}
+div#imggrainfree{
+    position: relative;
+    left:42%;/*mover de izquierda a derecha segun el porcentaje*/
+    top:25%;/*mover de arriba a abajo segun el porcentaje*/
+}
+div#txtgrainfree{
+    position:relative;
+    left: 27%;
+    top:27%;
+    color:#414141;
+    font-family: "Cooper Black";
+}
+.botongfperros{
+    position: relative;
+    width:96px;
+    height: 40px;
+    top:95px;
+    left:50px;
+    background-color: transparent;
+    border-radius: .60px;
+    border: 2px solid; 
+    border-color:black;
+    border-radius: 60px;
+}
+.botongfperros:hover{
+    background-color: black;
+    cursor: pointer;
+    transition: background-color 0.5s;
+}
+.botongfperros a{
+    position: relative;
+    left:15px;
+    top:10px;
+    font-size: 15px;
+    color:black;
+    font-family: "Cooper Black";
+}
+.botongfperros:hover a{
+    position: relative;
+    left:15px;
+    top:10px;
+    font-size: 15px;
+    color:white; 
+    font-family: "Cooper Black";
+}
+.botongfgatos{
+    position: relative;
+    width:96px;
+    height: 40px;
+    top:50px;
+    left:180px;
+    background-color:transparent;
+    border: 2px solid; 
+    border-color:white;
+    border-radius: 60px;
+}
+.botongfgatos:hover{
+    background-color: white;
+    cursor: pointer;
+    transition: background-color 0.5s;
+}
+.botongfgatos a{
+    position: relative;
+    font-size: 15px;
+    color:white;
+    left:20px;
+    top:10px;
+    font-family: "Cooper Black";
+}
+.botongfgatos:hover a{
+    position: relative;
+    font-size: 15px;
+    color:black;
+    left:20px;
+    top:10px;
+    font-family: "Cooper Black";
+}
+div#spremium{
+    position: relative;
+    width:25%;
+    height: 300px;
+    left:328px;
+    background-color: #F6AC4D;
+    top:-430px;
+}
+div#imgspremium{
+    position: relative;
+    left:32%;
+    top:25%;
+}
+div#txtspremium{
+    position:relative;
+    left: 18%;
+    top:27%;
+    color:#414141;
+    font-family: "Cooper Black";
+}
+.botonspperros{
+    position: relative;
+    width:96px;
+    height: 40px;
+    top:95px;
+    left:50px;
+    background-color: transparent;
+    border-radius: .60px;
+    border: 2px solid; 
+    border-color:black;
+    border-radius: 60px;
+}
+.botonspperros:hover{
+    background-color: black;
+    cursor: pointer;
+    transition: background-color 0.5s;
+}
+.botonspperros a{
+    position: relative;
+    left:15px;
+    top:10px;
+    font-size: 15px;
+    color:black;
+    font-family: "Cooper Black";
+}
+.botonspperros:hover a{
+    position: relative;
+    left:15px;
+    top:10px;
+    font-size: 15px;
+    color:white; 
+    font-family: "Cooper Black";
+}
+.botonspgatos{
+    position: relative;
+    width:96px;
+    height: 40px;
+    top:50px;
+    left:180px;
+    background-color:transparent;
+    border: 2px solid;
+    border-color:white;
+    border-radius: 60px;
+}
+.botonspgatos:hover{
+    background-color: white;
+    cursor: pointer;
+    transition: background-color 0.5s;
+}
+.botonspgatos a{
+    position: relative;
+    font-size: 15px;
+    color:white;
+    left:20px;
+    top:10px;
+    font-family: "Cooper Black"; 
+}
+.botonspgatos:hover a{
+    position: relative;
+    font-size: 15px;
+    color:black;
+    left:20px;
+    top:10px;
+    font-family: "Cooper Black"; 
+}
+div#hpremium{
+    position: relative;
+    width:25%;
+    height: 300px;
+    top:-730px;
+    left:656px;
+    background-color: #FD779B;
+}
+div#imghpremium{
+    position: relative;
+    left:39%;
+    top:25%;
+}
+div#txthpremium{
+    position:relative;
+    left: 20%;
+    top:27%;
+    color:#414141;
+    font-family: "Cooper Black";
+}
+.botonhpperros{
+    position: relative;
+    width:96px;
+    height: 40px;
+    top:95px;
+    left:50px;
+    background-color: transparent;
+    border-radius: .60px;
+    border: 2px solid; 
+    border-color:black;
+    border-radius: 60px;
+}
+.botonhpperros:hover{
+    background-color: black;
+    cursor: pointer;
+    transition: background-color 0.5s;
+}
+.botonhpperros a{
+    position: relative;
+    left:15px;
+    top:10px;
+    font-size: 15px;
+    color:black;
+    font-family: "Cooper Black";
+}
+.botonhpperros:hover a{
+    position: relative;
+    left:15px;
+    top:10px;
+    font-size: 15px;
+    color:white; 
+    font-family: "Cooper Black";
+}
+.botonhpgatos{
+    position: relative;
+    width:96px;
+    height: 40px;
+    top:50px;
+    left:180px;
+    background-color:transparent;
+    border: 2px solid;
+    border-color:white;
+    border-radius: 60px;
+}
+.botonhpgatos:hover{
+    background-color: white;
+    cursor: pointer;
+    transition: background-color 0.5s;
+}
+.botonhpgatos a{
+    position: relative;
+    font-size: 15px;
+    color:white;
+    left:20px;
+    top:10px;
+    font-family: "Cooper Black";
+}
+.botonhpgatos:hover a{
+    position: relative;
+    font-size: 15px;
+    color:black;
+    left:20px; 
+    top:10px;
+    font-family: "Cooper Black";
+}
+div#dpremium{
+    position: relative;
+    width: 25%;
+    height: 300px;
+    top:-1030px;
+    left:984px;
+    background-color: #4db5f6;
+}
+div#imgpremium{
+    position: relative;
+    left:42%;
+    top:25%;
+}
+div#txtpremium{
+    position:relative;
+    left: 32%;
+    top:27%;
+    color:#414141;
+    font-family: "Cooper Black";
+}
+.botonpperros{
+    position: relative;
+    width:96px;
+    height: 40px;
+    top:95px;
+    left:50px;
+    background-color: transparent;
+    border-radius: .60px;
+    border: 2px solid; 
+    border-color:black;
+    border-radius: 60px;
+}
+.botonpperros:hover{
+    background-color: black;
+    cursor: pointer;
+    transition: background-color 0.5s;
+}
+.botonpperros a{
+    position: relative;
+    left:15px;
+    top:10px;
+    font-size: 15px;
+    color:black;
+    font-family: "Cooper Black";
+}
+.botonpperros:hover a{
+    position: relative;
+    left:15px;
+    top:10px;
+    font-size: 15px;
+    color:white; 
+    font-family: "Cooper Black";
+}
+.botonpgatos{
+    position: relative;
+    width:96px;
+    height: 40px;
+    top:50px;
+    left:180px;
+    background-color:transparent;
+    border: 2px solid;
+    border-color:white;
+    border-radius: 60px;
+}
+.botonpgatos:hover{
+    background-color: white;
+    cursor: pointer;
+    transition: background-color 0.5s;
+}
+.botonpgatos a{
+    position: relative;
+    font-size: 15px;
+    color:white;
+    left:20px; 
+    top:10px;
+    font-family: "Cooper Black";
+}
+.botonpgatos:hover a{
+    position: relative;
+    font-size: 15px;
+    color:black;
+    left:20px; 
+    top:10px;
+    font-family: "Cooper Black";
+}
+
+div#marcas{
+    position: relative;
+    background-color: #F2F2F2;
+    width: 100%;
+    height: 463px;
+    top: 531px;
+}
+
+div#nmarcas{
+    position: relative;
+    left: 140px;
+    font-size: 20px;
+    top:90px;
+    font-family: "Cooper Black";
+    color: #414141;
+}
+
+div#amoranimales{
+    position: relative;
+    left: 140px;
+    top:110px;
+    font-size: 16px;
+    font-family: sans-serif;
+    color:#414141;    
+}
+
+div#seleccion{
+    position: relative;
+    left: 140px;
+    top:110px;
+    font-size: 16px;
+    font-family: sans-serif;
+    color:#414141; 
+}
+
+.vermarcas{
+    position: relative;
+    width:141px;
+    height: 36px;
+    background-color: #F9C32D;
+    border-radius:60px;
+    left:140px;
+    top:125px;
+}
+.vermarcas:hover{
+    background-color: #F6AC4D;
+    cursor: pointer;
+    transition: background-color 0.5s;
+}
+.vermarcas a{
+    position: relative;
+    left:14px;
+    top:8px;
+    font-size: 16px;
+    color:#FFFFFF;
+    text-decoration: none;
+    font-family: "Cooper Black";
+}
+
+div#casillabirbo{
+    position: relative;
+    width: 120px;
+    height: 80px;
+    background-color: white;
+    left:610px;
+    top: -160px;
+}
+
+div#casillabirbo:hover{
+    background-color: #FBD56C;
+    cursor: pointer;
+}
+
+div#imgbirbo{
+    position: relative;
+    width: 60px;
+    height: 35.65px;
+    top:22px;
+    left:7px;
+}
+div#casillacd{
+    position:relative;
+    width: 120px;
+    height: 80px;
+    background-color: white;
+    left:740px;
+    top: -240px;
+}
+div#casillacd:hover{
+    background-color: #FBD56C;
+    cursor: pointer;
+}
+div#imgchampiondog{
+    position: relative;
+    top:10px;
+    left:7px;
+}
+div#casillaevolve{
+    position:relative;
+    width: 120px;
+    height: 80px;
+    background-color: white;
+    top:-230px;
+    left:610px;
+}
+div#casillaevolve:hover{
+    background-color: #FBD56C;
+    cursor: pointer;
+}
+div#imgevolve{
+    position: relative;
+    top:10px;
+    left:7px;
+}
+div#casillamd{
+    position:relative;
+    width: 120px;
+    height: 80px;
+    background-color: white;
+    left:740px;
+    top: -310px;
+}
+div#casillamd:hover{
+    background-color: #FBD56C;
+    cursor: pointer;
+}
+div#imgmasterdog{
+    position: relative;
+    top:10px;
+    left:7px;
+}
+div#casillamonello{
+    position:relative;
+    width: 120px;
+    height: 80px;
+    background-color: white;
+    top:-300px;
+    left:610px;
+}
+div#casillamonello:hover{
+    background-color: #FBD56C;
+    cursor: pointer;
+}
+div#imgmonello{
+    position: relative;
+    top:10px;
+    left:7px;
+}
+div#casillane{
+    position:relative;
+    width: 120px;
+    height: 80px;
+    background-color: white;
+    top:-380px;
+    left:740px;
+}
+div#casillane:hover{
+    background-color: #FBD56C;
+    cursor: pointer;
+}
+div#imgne{
+    position: relative;
+    top:10px;
+    left:7px;
+}
+div#gatito{
+    position:absolute;
+    top: 40px;
+    bottom: -50px;
+    right:181px;
+    left:879px;
+    display:block;
+}
+
+div#caracteristicas{
+    position:relative;
+    height: 430px;
+    width:100%;
+    background-color: white;
+    top:585px;
+}
+div#carac{
+    position:relative;
+    font-size: 30px;
+    top:25px;
+    font-family: "Cooper Black";
+    color:#414141;
+}
+
+div#cara{
+    position:relative;
+    font-size: 18px;
+    top:80px;
+    color:#414141;
+    font-family: sans-serif;
+}
+
+div#amarillovideos{
+    position:relative;
+    background-color: #F9C32D;
+    top:530px;
+    width:100%;
+    height: 500;
+
+}
+
+div#video1{
+    position:relative;
+    left:100px;
+    top:-45px;
+}
+div#video2{
+    position:relative;
+    left:700px;
+    top:-545px;
+}
+
+div#redsocial{
+    width: 100%;
+    height: 1300px;
+    background-color: white;
+}
+
+div#insta{
+    position: relative;
+    top:600px;
+    left:140px;
+}
+
+div#ig1{
+    position:relative;
+    top:610px;
+    left:140px;
+}
+
+div#ig2{
+    position:relative;
+    top:360px;
+    left:400px;
+}
+
+div#ig3{
+    position:relative;
+    top:110px;
+    left:660px;
+}
+
+div#ig4{
+    position:relative;
+    top:-140px;
+    left:920px;
+}
+
+div#ig5{
+    position:relative;
+    top:-130px;
+    left:140px;
+}
+
+div#ig6{
+    position:relative;
+    top:-380px;
+    left:400px;
+}
+
+div#ig7{
+    position:relative;
+    top:-630px;
+    left:660px;
+}
+
+div#ig8{
+    position:relative;
+    top:-880px;
+    left:920px;
+}
+
+.cargarmas{
+    position: relative;
+    width:100px;
+    height: 36px;
+    background-color:#333333;
+    border-radius:5px;
+    top:-870px;
+    left:500px;
+    
+}
+.cargarmas:hover{
+    background-color: #666666;
+    cursor: pointer;
+    transition: background-color 0.5s;
+}
+.cargarmas a{
+    position: relative;
+    left:10px;
+    top:10px;
+    font-size: 14px;
+    color:#FFFFFF;
+    text-decoration: none;
+    font-family: sans-serif;
+}
+
+.seguir{
+    position: relative;
+    width:168px;
+    height: 36px;
+    background-color:#408BD1;
+    border-radius:5px;
+    top:-906px;
+    left:610px;
+}
+.seguir:hover{
+    background-color: #359DFF;
+    cursor: pointer;
+    transition: background-color 0.5s;
+}
+.seguir a{
+    position: relative;
+    left:20px;
+    top:10px;
+    font-size: 14px;
+    color:#FFFFFF;
+    text-decoration: none;
+    font-family: sans-serif;
+}
+
+div#llamanos{
+    position: relative;
+    background-color: #F6AC4D;
+    width:50%;
+    height: 75px;
+    top:10px;
+}
+
+div#txtcall{
+    position: relative;
+    left:230px;
+    top:20px;
+    font-size: 26px;
+    font-family: "Cooper Black";
+    color:#414141;
+}
+
+div#imgcall{
+    position: relative;
+    left: 390px;
+    top:-8px;
+}
+
+div#numerocall{
+    position: relative;
+    left:420px;
+    top:-34px;
+    font-family: "Cooper Black";
+}
+
+div#horarios{
+    position: relative;
+    background-color: #F9C32D;
+    width:50%;
+    height: 75px;
+    top:-65px;
+    left:655px;
+}
+
+div#horario{
+    position: relative;
+    left:80px;
+    top:20px;
+    font-family: sans-serif;
+}
+div#callcenter{
+    position: relative;
+    left:190px;
+    top:-18px;
+    font-family: sans-serif;
+}
+div#mimascota{
+    position:relative;
+    background-color: #F2F2F2;
+    top:-65px;
+    height: 700px;
+}
+div#mimasco{
+    position: relative;
+    font-size: 30px;
+    top:30px;
+    font-family: "Cooper Black";
+    color:#414141;
+}
+div#masco{
+    position: relative;
+    top:30px;
+    font-family: sans-serif;
+    color:#414141;
+}
+div#card1{
+    position:relative;
+    background-color: white;
+    width: 339px;
+    height: 430px;
+    left:150px;
+    top:70px;
+}
+div#titulo1{
+    position: relative;
+    font-family: "Cooper Black";
+    color:#414141;
+}
+div#txt1{
+    position:relative;
+    top:20px;
+    color:#414141;
+    font-family: sans-serif;
+    font-size: 14px;
+}
+div#leer1{
+    position:relative;
+    width:75px;
+    border-bottom: 2px solid #F9C32D;
+    top:75px;
+    left:10px;
+    font-family: "Cooper Black";
+}
+div#card2{
+    position:relative;
+    background-color: white;
+    width: 337px;
+    height: 430px;
+    left:501px;
+    top:-360px;
+}
+div#titulo2{
+    position: relative;
+    font-family: "Cooper Black";
+    color:#414141;
+}
+div#txt2{
+    position:relative;
+    top:20px;
+    color:#414141;
+    font-family: sans-serif;
+    font-size: 14px;
+}
+div#leer2{
+    position:relative;
+    width:75px;
+    border-bottom: 2px solid #F9C32D;
+    top:100px;
+    left:10px;
+    font-family: "Cooper Black";
+}
+div#card3{
+    position:relative;
+    background-color: white;
+    width: 336px;
+    height: 430px;
+    left:850px;
+    top:-790px;
+}
+div#titulo3{
+    position: relative;
+    font-family: "Cooper Black";
+    color:#414141;
+}
+div#txt3{
+    position:relative;
+    top:20px;
+    color:#414141;
+    font-family: sans-serif;
+    font-size: 14px;
+}
+div#leer3{
+    position:relative;
+    width:75px;
+    border-bottom: 2px solid #F9C32D;
+    top:100px;
+    left:10px;
+    font-family: "Cooper Black";
+}
+div#refugios{
+    position:relative;
+    top:-65px;
+    height: 650px;
+    background-color: white;
+}
+div#refugio{
+    position:relative;
+    top:70px;
+    font-size: 30px;
+    font-family: "Cooper Black";
+    color:#414141;
+}
+div#ref{
+    position:relative;
+    top:90px;
+    font-family: sans-serif;
+    color:#414141;
+}
+div#imgcard1{
+    position:relative;
+    top:150px;
+    left:150px;
+}
+div#txtcard1{
+    position: relative;
+    top:180px;
+    left:-360px;
+    font-family: sans-serif;
+    color:#414141;
+}
+div#imgcard2{
+    position:relative;
+    top:-128px;
+    left:500px;
+}
+div#txtcard2{
+    position: relative;
+    top:-100px;
+    left:-10px;
+    font-family: sans-serif;
+    color:#414141;
+}
+div#imgcard3{
+    position:relative;
+    top:-442px;
+    left:850px;
+}
+div#txtcard3{
+    position: relative;
+    top:-420px;
+    left:345px;
+    font-family: sans-serif;
+    color:#414141;
+}
+div#visitar{
+    position: relative;
+}
+div#imgvisitar{
+    position:relative;
+    top:250px;
+}
+div#visitaamarillo{
+    position:relative;
+    height:552px ;
+    width: 55%;
+    left:590px;
+    background-color:#F9C32D;
+    top:-552px;
+}
+div#visitatitulo{
+    position:relative;
+    font-size:30px;
+    top:140px;
+    left:50px;
+    font-family: "Cooper Black";
+    color:#414141;
+}
+div#visitatxt{
+    position:relative;
+    top:160px;
+    left:50px;
+    font-family: sans-serif;
+    color:#414141;
+}
+div#visitaboton{
+    position: relative;
+    width:170px;
+    height: 36px;
+    background-color: #414141;
+    border-radius:60px;
+    left:55px;
+    top:175px;  
+}
+div#visitaboton:hover{
+    background-color: #1F1F1F;
+    cursor: pointer;
+    transition: background-color 0.5s;
+}
+div#visitaboton a{
+    position: relative;
+    left:8px;
+    top:8px;
+    font-size: 15px;
+    font-family: "Cooper Black";
+}
+div#footergrande{
+    position: relative;
+    background-color: #3F3F3F;
+    top:-552px;
+    width: 100%;
+    height: 450px;
+}
+div#lista{
+    position: relative;
+    left:140px;
+    TOP:100px;
+    line-height: 35px;
+    color: #3F3F3F;
+    font-family: sans-serif;
+}
+div#suscribete{
+    position: relative;
+    text-align: center;
+    font-size: 30px;
+    top:-60px;
+    font-family: "Cooper Black";
+    color:#F6AC4D;
+}
+div#input{
+    position: relative;
+    left:500px;
+    top:-50px;
+}
+div#enviar{
+    position:relative;
+    left:699px;
+    top:-85px;
+}
+div#fuller{
+    position:relative ;
+    left:900px;
+    top:-170px;
+}
+div#mail{
+    position: relative;
+}
+div#imgmail{
+    position:relative;
+    left:970px;
+    top:-150px;
+}
+div#txtmail{
+    position: relative;
+    left:990px;
+    top:-167px;
+    font-family: sans-serif;
+}
+div#txtcont{
+    position:relative;
+    text-align: right;
+    right: 180px;
+    top:-135px;
+    font-family: sans-serif;
+    color: white;
+}
+div#footerchiquito{
+    position: relative;
+    background-color: #252628;
+    width: 100%;
+    height: 40px;
+    top:-552px;
+}
+footer{ /*para eliminar el espacio blanco que quedo al final de la pagina(o casi todo)*/
+    height: 0;
+}
+div#f{
+    position: relative;
+    text-align: left;
+    color: white;
+    left: 200px;
+    top:12px;
+    font-family: sans-serif;
+}
+div#imgvitamina{
+    position: relative;
+    text-align: right;
+    right: 420px;
+    top:-5px;
+}
+div#vitamina{
+    position: relative;
+    color: white;
+    top:-22px;
+    text-align: right;
+    right:265px;
+    font-family: sans-serif;
+}
+div#vitamina2{
+    position: relative;
+    top:-40px;
+    text-align: right;
+    right:180px;
+    font-family: sans-serif;
+}
